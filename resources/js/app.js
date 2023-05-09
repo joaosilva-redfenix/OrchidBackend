@@ -1,6 +1,11 @@
 import './bootstrap';
 import "../css/app.css";
-import {createApp} from 'vue'
+import {createApp} from 'vue';
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
 
 import app from './components/app.vue'
 

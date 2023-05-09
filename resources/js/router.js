@@ -5,7 +5,7 @@ import about from "./pages/about.vue";
 
 const routes = [
   {
-    path: '/home',
+    path: '/dashboard',
     name: 'home',
     component: home
   },
