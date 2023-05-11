@@ -7,6 +7,7 @@ namespace App\Orchid\Screens;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
 
+
 class PlatformScreen extends Screen
 {
     /**
@@ -24,7 +25,7 @@ class PlatformScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Get Started';
+        return 'x';
     }
 
     /**
@@ -32,7 +33,7 @@ class PlatformScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Welcome to your Orchid application.';
+        return 'xxx';
     }
 
     /**
@@ -53,8 +54,9 @@ class PlatformScreen extends Screen
     public function layout(): iterable
     {
         return [
-            Layout::view('platform::partials.update-assets'),
-            Layout::view('platform::partials.welcome'),
+            Layout::view('welcomeuser'),
+            // Layout::view('platform::partials.update-assets'),
+            // Layout::view('platform::partials.welcome'),
         ];
     }
 }
