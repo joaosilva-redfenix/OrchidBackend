@@ -7,56 +7,55 @@ namespace App\Orchid\Screens;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
 
-
 class PlatformScreen extends Screen
 {
-    /**
-     * Fetch data to be displayed on the screen.
-     *
-     * @return array
-     */
-    public function query(): iterable
-    {
-        return [];
-    }
+/**
+* Fetch data to be displayed on the screen.
+*
+* @return array
+*/
+public function query(): iterable
+{
+return [];
+}
 
-    /**
-     * The name of the screen displayed in the header.
-     */
-    public function name(): ?string
-    {
-        return 'x';
-    }
+/**
+* The name of the screen displayed in the header.
+*/
+public function name(): ?string
+{
+return 'x';
+}
 
-    /**
-     * Display header description.
-     */
-    public function description(): ?string
-    {
-        return 'xxx';
-    }
+/**
+* Display header description.
+*/
+public function description(): ?string
+{
+return 'xxx';
+}
 
-    /**
-     * The screen's action buttons.
-     *
-     * @return \Orchid\Screen\Action[]
-     */
-    public function commandBar(): iterable
-    {
-        return [];
-    }
+/**
+* The screen's action buttons.
+*
+* @return \Orchid\Screen\Action[]
+*/
+public function commandBar(): iterable
+{
+return [];
+}
 
-    /**
-     * The screen's layout elements.
-     *
-     * @return \Orchid\Screen\Layout[]
-     */
-    public function layout(): iterable
-    {
-        return [
-            Layout::view('welcomeuser'),
-            // Layout::view('platform::partials.update-assets'),
-            // Layout::view('platform::partials.welcome'),
-        ];
-    }
+/**
+* The screen's layout elements.
+*
+* @return \Orchid\Screen\Layout[]
+*/
+public function layout(): iterable
+{
+return [
+Layout::view('welcomeuser'),
+// Layout::view('platform::partials.update-assets'),
+// Layout::view('platform::partials.welcome'),
+];
+}
 }

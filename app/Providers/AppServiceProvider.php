@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
+use Orchid\Platform\Dashboard;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,8 +19,9 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot(Dashboard $dashboard): void
     {
-        //
+        // $dashboard->registerResource('scripts',Vite::isRunningHot() ? Vite::hotAsset('resources/js/app.js') : Vite::asset('resources/js/app.js'));
+        // $dashboard->registerResource('stylesheets',Vite::isRunningHot() ? Vite::hotAsset('resources/css/app.css') : Vite::asset('resources/css/app.css'));
     }
 }

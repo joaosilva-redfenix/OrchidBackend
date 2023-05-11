@@ -10,6 +10,8 @@ use Orchid\Platform\OrchidServiceProvider;
 use Orchid\Screen\Actions\Menu;
 use Orchid\Support\Color;
 
+use App\Orchid\Screens\EquipmentsScreen;
+
 class PlatformProvider extends OrchidServiceProvider
 {
     /**
@@ -38,6 +40,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('bs.book')
                 ->title('Navigation')
                 ->route(config('platform.index')),
+            
+            Menu::make('Equipments')
+            ->icon('bs.book')
+            ->route('platform.Equipments'),
+            
 
             // Menu::make('Example Screen')
             //     ->icon('bs.collection')
